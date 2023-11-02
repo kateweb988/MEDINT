@@ -1,0 +1,141 @@
+body
+   font-family: 'Inter', sans-serif
+   background: #ffff
+   font-weight: 400
+   font-size: 15px
+   line-height: 24px
+   color: #282D3C
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $blue
+.container
+   padding: 0 15px
+   max-width: 1475px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   color: #FFF
+   font-size: 40px
+   font-style: normal
+   font-weight: 800
+   line-height: 50px
+   margin: 0
+h2 
+   margin: 0
+   color: #282D3C
+   text-align: center
+   font-size: 35px
+   font-style: normal
+   font-weight: 600
+   line-height: 50px 
+.sub 
+   margin: 15px auto 0
+   color: #565B6A
+   text-align: center
+   opacity: 0.7
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $blue !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $blue !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path, rect
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   width: 167.283px
+   height: 50px
+   border-radius: 1000px
+   background: $blue
+   border: 1px solid $blue
+   color: #FFF
+   font-size: 14px
+   font-style: normal
+   font-weight: 500
+   line-height: 24px
+   &:hover 
+      background: transparent 
+      color: $blue
+   &_2
+      background: transparent
+      border: 1px dashed $blue
+      color: $blue
+      &:hover 
+         background: $blue
+         color: white
+   &_3 
+      background: #E3F4FC
+      border: 1px solid #E3F4FC
+      color: $blue
+      &:hover 
+         border: 1px solid $blue
+
