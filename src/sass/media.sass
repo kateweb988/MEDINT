@@ -154,7 +154,7 @@
          display: flex
          margin-top: 40px
       .nav__local
-         margin-bottom: 40px
+         margin-bottom: 20px
       &__flex 
          margin-top: 40px
       .nav__form 
@@ -168,6 +168,11 @@
             margin-bottom: 20px
       .menu-btn3, .nav__catalog
          display: flex
+      .nav__btn_2
+         margin-top: 20px !important
+      .nav__mail
+         display: flex
+         margin-bottom: 30px
    .menu.active
       transform: translateX(0)
    .menu-btn.active 
@@ -422,6 +427,7 @@
       width: 100%
       margin-bottom: 40px
       max-width: 700px
+      height: auto
    .about__content
       max-width: 100%
    .pay__item
@@ -462,6 +468,11 @@
       padding-bottom: 20px
    .card table
       width: 1300px
+   .slider .slick-slide
+      padding: 20px
+   .slider .slick-slide img
+      width: 100%
+      height: auto
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -599,6 +610,7 @@
    .nav__mob 
       display: flex
       align-items: center
+      flex-direction: column
       .nav__tel 
          margin-left: 10px
          color: #282D3C
@@ -606,15 +618,23 @@
          font-weight: 700
          line-height: 14px
       .mail 
-         height: 27px
+         height: auto
          display: block
+         margin-top: 10px
+         p 
+            display: block
+            color: #282D3C
+            font-size: 13px
+            font-weight: 700
+            line-height: 14px
    .item__pic
-      width: 62%
+      width: 62% !important
+      height: auto !important
    .item__el_3 .item__pic
-      width: 100%
+      width: 100%  !important
    .item__el_6 .item__pic 
       right: 76px
-      width: 39%
+      width: 37% !important
    .item__name
       font-size: 10px
       line-height: 140% 
@@ -716,7 +736,7 @@
    .container
       padding: 0 20px
    .menu-btn
-      top: 0
+      top: 5px
       left: -15px
    .nav__mob
       position: relative
@@ -1010,9 +1030,10 @@
       margin-top: 25px
    .man__box_2 .man__item .item__pic
       max-height: inherit
-      width: auto 
+      width: auto !important
+      height: auto !important
       max-height: 150px
-      max-width: 180px
+      max-width: 150px
    .about__wrap 
       padding: 248px 0 60px
       margin-bottom: 60px
@@ -1101,9 +1122,28 @@
       padding: 4px 20px
    .card table td:first-child
       width: 85px
-   .man__item img
+   .main .man__item img
       position: relative
       top: 0 !important
+   .man__item
+      min-height: inherit
+   .main
+      .item__box_1 .item__el_5 .item__pic
+         width: 44% !important
+      .item__el_4 .item__pic
+         width: 50% !important
+      .item__box_2 .item__el_2 .item__pic
+         width: 50% !important
+      .item__box_2 .item__el_3 .item__pic
+         width: 120px !important
+      .item__content .item__el_7 .item__pic
+         width: 135px !important
+      .item__content .item__el_10 .item__pic
+         width: 136px !important
+      .item__content .item__el_13 .item__pic
+         width: 112px !important
+      .item__content .item__el_14 .item__pic
+         width: 46px !important
 @media screen and (max-width: 370px)
    .nav__mob .nav__tel
       font-size: 12px

@@ -1751,6 +1751,7 @@ input[type="search"]::-webkit-search-results-decoration
       right: 0
       bottom: 0
       z-index: 1
+      object-fit: contain
    &__fig 
       z-index: 0
       position: absolute
@@ -2035,61 +2036,24 @@ input[type="search"]::-webkit-search-results-decoration
       width: 100%
       padding: 24px 0 82px
       background: #F4F6FB
-   &__box 
-      margin: 100px 0 60px
-      justify-content: flex-start
-      flex-wrap: wrap
-      &_2 
-         .man__item
-            width: 31.1%
-            text-align: left
-            margin-bottom: 47px
-            flex-direction: column
-            padding: 20px 32px
-            height: 243px
-            margin-right: 47px
-            align-items: flex-start
-            &:nth-child(3n)
-               margin-right: 0
-            &:nth-child(5n)
-               margin-right: 47px
-            &:last-child
-               .item__pic
-                  right: 0
-                  bottom: 0
-            .item__sum
-               margin-top: 0
-               color: #282828
-               font-size: 15px
-               font-weight: 300
-               line-height: 25px
-               &::before
-                  background: #282828
-            .item__name
-               color: #282828
-               font-size: 18px
-               text-align: left
-               font-weight: 700
-               position: relative
-               z-index: 3
-               margin-top: 0
-               line-height: 25px
-            .item__pic
-               right: 40px
-               bottom: 30px
    &__item 
       width: 19%
       margin: 0 17px 17px 0
       text-align: center
       position: relative
-      height: 167.935px
+      min-height: 167.935px
+      height: auto
       border-radius: 5px
       border: 2px solid #E6F6FF
       background: #FFF
       display: flex
       flex-direction: column
       align-items: center
-      padding: 60px 0 20px
+      padding: 60px 20px 20px
+      img 
+         max-width: 100%
+         margin-bottom: 5px
+         object-fit: contain
       &:hover 
          border: 2px solid $blue
       p 
@@ -2203,11 +2167,85 @@ input[type="search"]::-webkit-search-results-decoration
       border-radius: 3px
       background: #FFF
       padding: 17px 12px
+      img 
+         width: 100%
+         height: 100%
+         object-fit: contain
    h1 
       color: #282D3C
       font-size: 35px
       font-weight: 600
       line-height: 50px
+   &__box 
+      margin: 100px 0 60px
+      justify-content: flex-start
+      flex-wrap: wrap
+      &_2 
+         .man__item
+            width: 31.1%
+            text-align: left
+            margin-bottom: 47px
+            flex-direction: column
+            padding: 20px 32px
+            height: 243px
+            margin-right: 47px
+            align-items: flex-start
+            &:nth-child(3n)
+               margin-right: 0
+            &:nth-child(5n)
+               margin-right: 47px
+            &:last-child
+               .item__pic
+                  right: 0
+                  bottom: 0
+            &:nth-child(4), &:nth-child(3), &:nth-child(2), &:nth-child(5)
+               img 
+                  position: absolute
+                  top: inherit
+            .item__sum
+               margin-top: 0
+               color: #282828
+               font-size: 15px
+               font-weight: 300
+               line-height: 25px
+               &::before
+                  background: #282828
+            .item__name
+               color: #282828
+               font-size: 18px
+               text-align: left
+               font-weight: 700
+               position: relative
+               z-index: 3
+               margin-top: 0
+               line-height: 25px
+            .item__pic
+               right: 40px
+               bottom: 30px
+            &:nth-child(1)
+               .item__pic
+                  width: 177px
+                  height: 160px
+            &:nth-child(2)
+               .item__pic
+                  width: 192px
+                  height: 146px
+            &:nth-child(3)
+               .item__pic
+                  width: 99px
+                  height: auto
+            &:nth-child(4)
+               .item__pic
+                  width: 196px
+                  height: auto
+            &:nth-child(5)
+               .item__pic
+                  width: 207px
+                  height: 185px
+            &:nth-child(6)
+               .item__pic
+                  width: 151px
+                  height: 203px
 .about 
    padding-bottom: 40px
    &__wrap 
@@ -2308,6 +2346,9 @@ input[type="search"]::-webkit-search-results-decoration
    &__pic 
       border-radius: 20px
       overflow: hidden
+      width: 734px
+      height: 589px 
+      object-fit: cover
 .call-pay
    .call__wrap
       margin-top: 50px
@@ -2361,6 +2402,8 @@ input[type="search"]::-webkit-search-results-decoration
       display: flex
       align-items: center
       justify-content: center
+      img 
+         max-width: 122px
 .contacts 
    .popup 
       position: relative
@@ -2752,7 +2795,9 @@ input[type="search"]::-webkit-search-results-decoration
       border: 1px solid #DFDFDF
       background: #FFF
       img 
-         width: 100%
+         width: 444px
+         height: 296px
+         object-fit: contain
 .slider-nav
    max-width: 100%
    margin-right: 32px
@@ -3054,3 +3099,78 @@ input[type="search"]::-webkit-search-results-decoration
    line-height: normal
    text-transform: uppercase
    margin: 0 auto
+.page 
+   .item__pic 
+      max-width: 210px
+.slider-nav__item
+   padding: 10px
+   img 
+      width: 100%
+      height: 100%
+      object-fit: contain
+.main 
+   .item__el_1 .item__pic
+      width: 202px
+      height: 161px
+   .item__el_2 .item__pic
+      width: 207px
+      height: 234px
+   .item__el_3 .item__pic
+      max-width: 364px
+      height: 362px
+      width: 100%
+   .item__el_4 .item__pic
+      width: 179px
+      height: 160px
+   .item__el_5 .item__pic
+      width: 153px
+      height: 186px
+   .item__el_6 .item__pic
+      width: 203px
+      height: 274px
+   .item__box_2
+      .item__el_1 .item__pic
+         width: 181px
+         height: 158px
+      .item__el_2 .item__pic
+         width: 182px
+         height: 177px
+      .item__el_3 .item__pic
+         height: 473px
+         width: 246px
+      .item__el_4 .item__pic
+         width: 200px
+         height: 187px
+      .item__el_5 .item__pic
+         width: 254px
+         height: 184px
+      .item__el_6 .item__pic
+         width: 371px
+         height: 188px
+   .item__content .item__el_7 .item__pic
+      width: 319px
+      height: 420px
+   .item__content .item__el_8 .item__pic
+      width: 213px 
+      height: 165px
+   .item__content .item__el_9 .item__pic
+      width: 238px
+      height: 141px
+   .item__content .item__el_10 .item__pic
+      width: 219px
+      height: 135px
+   .item__content .item__el_11 .item__pic
+      width: 437px
+      height: 257px
+   .item__content .item__el_12 .item__pic
+      width: 194px
+      height: 165px
+   .item__content .item__el_13 .item__pic
+      width: 159px
+      height: 181px
+   .item__content .item__el_14 .item__pic
+      width: 96px
+      height: 197px
+   .item__content .item__el_15 .item__pic
+      width: 284px
+      height: 237px
