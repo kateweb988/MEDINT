@@ -400,14 +400,14 @@ input[type=range]::-webkit-slider-thumb {
   pointer-events: all;
   width: 15px;
   height: 25px;
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   cursor: pointer;
   border: none;
   top: 6px;
   position: relative; }
 
 input[type=range]:nth-child(2)::-webkit-slider-thumb {
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   position: relative;
   top: 5px;
   height: 25px; }
@@ -417,7 +417,7 @@ input[type=range]::-moz-range-thumb {
   pointer-events: all;
   width: 15px;
   height: 25px;
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   cursor: pointer; }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -568,7 +568,7 @@ input[type="range"] {
     font-weight: 300;
     line-height: 25px; }
   .popup .call__form .selectCF .arrowCF, .popup2 .call__form .selectCF .arrowCF {
-    background: url(/img/arr2.svg) no-repeat !important;
+    background: url(../img/arr2.svg) no-repeat !important;
     width: 19px;
     height: 15px;
     right: 18px;
@@ -634,10 +634,10 @@ input[type="range"] {
   width: 25px;
   height: 19px;
   bottom: 32px;
-  background: url(/img/view.svg) center center no-repeat; }
+  background: url(../img/view.svg) center center no-repeat; }
 
 .password-control.view, .password-control2.view, .password-control3.view {
-  background: url(/img/no-view.svg) center center no-repeat;
+  background: url(../img/no-view.svg) center center no-repeat;
   right: 18px;
   width: 25px;
   height: 19px;
@@ -672,7 +672,7 @@ input[type="range"] {
   transition: 0.2s;
   width: 20px;
   height: 20px;
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #ffffff;
   max-width: 20px;
   margin-right: 14px;
@@ -680,7 +680,7 @@ input[type="range"] {
   border: 1px solid white; }
 
 .custom-checkbox:checked + label::before {
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #22B9FF;
   border: 1px solid #22B9FF; }
 
@@ -796,7 +796,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 5px;
   text-align: center;
   vertical-align: top;
-  background: url(/img/arr.svg) no-repeat !important;
+  background: url(../img/arr.svg) no-repeat !important;
   position: absolute;
   right: 18px;
   top: 23px; }
@@ -1032,7 +1032,7 @@ picture img {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down-arrow.png) no-repeat !important;
+  background: url(../img/down-arrow.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -1045,7 +1045,7 @@ picture img {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down-arrow.png) no-repeat !important;
+  background: url(../img/down-arrow.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -2403,7 +2403,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 30px;
     border: none;
     height: 45px;
-    background: url(/img/close3.svg) no-repeat !important; }
+    background: url(../img/close3.svg) no-repeat !important; }
     .bottom .menu-btn2.active img {
       display: none; }
   .bottom .mobile__form {
@@ -2973,7 +2973,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase; }
 
 .cat .custom-checkbox:checked + label::before {
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #22B9FF; }
 
 .cat .calc__item .custom-checkbox + label {
@@ -3030,7 +3030,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: normal; }
 
 .cat .accordeon__button:after, .cat .accordeon__button2:after, .cat .accordeon__button3:after, .cat .accordeon__button4:after, .cat .accordeon__button5:after, .cat .accordeon__button6:after {
-  background: url(/img/own-arrow.svg) no-repeat !important;
+  background: url(../img/own-arrow.svg) no-repeat !important;
   width: 20px;
   height: 20px;
   top: 1px;
@@ -3113,7 +3113,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 13px;
   right: 18px;
   top: 17px;
-  background: url(/img/own-arrow.svg) no-repeat !important; }
+  background: url(../img/own-arrow.svg) no-repeat !important; }
 
 .cat .style1 .onCF li ul {
   padding: 10px 0; }
@@ -3775,7 +3775,7 @@ input[type="search"]::-webkit-search-results-decoration {
     left: 0px;
     right: 14%;
     z-index: 11;
-    background: url(/img/burger.svg) no-repeat center center;
+    background: url(../img/burger.svg) no-repeat center center;
     overflow: hidden; }
   .menu-btn span {
     width: 38px;
